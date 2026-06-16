@@ -1,4 +1,4 @@
-/* iad-theme/iad.js — V7 */
+/* iad-theme/iad.js — V8 logo SVG */
 
 (function () {
   "use strict";
@@ -27,10 +27,7 @@
     topbar.id = "iadTopbar";
     topbar.innerHTML = `
       <div class="iad-brand">
-        <div class="iad-logo-mark">
-          <div class="iad-logo-main">iad</div>
-          <div class="iad-logo-small">iad</div>
-        </div>
+        <img class="iad-logo-img" src="iad-theme/logo-iad.svg" alt="iad">
         <div class="iad-brand-name">iad immobilier</div>
       </div>
 
@@ -69,10 +66,7 @@
 
       <div class="iad-bottom-spacer"></div>
 
-      <div class="iad-bottom-logo">
-        <div class="iad-bottom-logo-main">iad</div>
-        <div class="iad-bottom-logo-small">iad</div>
-      </div>
+      <img class="iad-bottom-logo-img" src="iad-theme/logo-iad-white.svg" alt="iad">
 
       <div class="iad-bottom-project">
         <strong>Un projet immobilier ?</strong>

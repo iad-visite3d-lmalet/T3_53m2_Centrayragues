@@ -1,9 +1,7 @@
-/* iad-theme/iad.css — V7
-   Corrections :
-   - logo texte plus proche du rendu attendu ;
-   - suppression des emojis ;
-   - icônes SVG propres ;
-   - téléphone, email et site mieux lisibles dans le bandeau bas.
+/* iad-theme/iad.css — V8
+   Logos SVG fournis :
+   - logo-iad.svg pour le bandeau haut ;
+   - logo-iad-white.svg pour le bandeau bas.
 */
 
 :root {
@@ -40,29 +38,15 @@ body.iad-themed {
 .iad-brand {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 18px;
   min-width: 300px;
 }
 
-.iad-logo-mark {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: var(--iad-blue);
-  font-weight: 900;
-  line-height: .82;
-  letter-spacing: -4px;
-  min-width: 82px;
-}
-
-.iad-logo-main {
-  font-size: 50px;
-}
-
-.iad-logo-small {
-  font-size: 25px;
-  letter-spacing: -2px;
-  margin-top: 3px;
+.iad-logo-img {
+  width: 82px;
+  height: auto;
+  display: block;
+  flex: 0 0 auto;
 }
 
 .iad-brand-name {
@@ -119,7 +103,7 @@ body.iad-themed {
   gap: 10px;
 }
 
-/* Icônes */
+/* Icônes SVG */
 .iad-svg {
   width: 23px;
   height: 23px;
@@ -209,23 +193,11 @@ body.iad-themed {
   flex: 1;
 }
 
-.iad-bottom-logo {
-  color: #fff;
-  font-weight: 900;
-  line-height: .78;
-  letter-spacing: -4px;
-  text-align: center;
-  min-width: 72px;
-}
-
-.iad-bottom-logo-main {
-  font-size: 46px;
-}
-
-.iad-bottom-logo-small {
-  font-size: 22px;
-  letter-spacing: -2px;
-  margin-top: 2px;
+.iad-bottom-logo-img {
+  width: 76px;
+  height: auto;
+  display: block;
+  flex: 0 0 auto;
 }
 
 .iad-bottom-project {
@@ -297,16 +269,8 @@ body.iad-themed .viewControlButton-6 { bottom: calc(var(--iad-bottom-height) + 1
     padding: 8px 12px;
   }
 
-  .iad-logo-mark {
-    min-width: 58px;
-  }
-
-  .iad-logo-main {
-    font-size: 34px;
-  }
-
-  .iad-logo-small {
-    font-size: 17px;
+  .iad-logo-img {
+    width: 54px;
   }
 
   .iad-brand {
@@ -318,7 +282,7 @@ body.iad-themed .viewControlButton-6 { bottom: calc(var(--iad-bottom-height) + 1
   .iad-phone-top,
   .iad-bottom-link,
   .iad-bottom-separator,
-  .iad-bottom-logo,
+  .iad-bottom-logo-img,
   .iad-bottom-project {
     display: none;
   }
