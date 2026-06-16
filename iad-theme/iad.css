@@ -1,5 +1,9 @@
-/* iad-theme/iad.css — V6
-   Reprise du thème visuel fourni, sans Plan 2D, avec coordonnées Laurent Malet.
+/* iad-theme/iad.css — V7
+   Corrections :
+   - logo texte plus proche du rendu attendu ;
+   - suppression des emojis ;
+   - icônes SVG propres ;
+   - téléphone, email et site mieux lisibles dans le bandeau bas.
 */
 
 :root {
@@ -22,7 +26,7 @@ body.iad-themed {
   left: 0;
   right: 0;
   height: var(--iad-top-height);
-  background: rgba(255,255,255,.96);
+  background: rgba(255,255,255,.97);
   color: var(--iad-dark);
   display: flex;
   align-items: center;
@@ -36,16 +40,29 @@ body.iad-themed {
 .iad-brand {
   display: flex;
   align-items: center;
-  gap: 18px;
-  min-width: 295px;
+  gap: 20px;
+  min-width: 300px;
 }
 
-.iad-logo {
-  font-size: 50px;
-  line-height: 38px;
+.iad-logo-mark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: var(--iad-blue);
   font-weight: 900;
+  line-height: .82;
   letter-spacing: -4px;
+  min-width: 82px;
+}
+
+.iad-logo-main {
+  font-size: 50px;
+}
+
+.iad-logo-small {
+  font-size: 25px;
+  letter-spacing: -2px;
+  margin-top: 3px;
 }
 
 .iad-brand-name {
@@ -58,7 +75,7 @@ body.iad-themed {
 .iad-agent {
   border-left: 1px solid #bfcbd2;
   padding-left: 28px;
-  min-width: 210px;
+  min-width: 220px;
 }
 
 .iad-agent strong {
@@ -83,6 +100,9 @@ body.iad-themed {
   font-weight: 500;
   white-space: nowrap;
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
 }
 
 .iad-button {
@@ -94,6 +114,23 @@ body.iad-themed {
   font-weight: 600;
   white-space: nowrap;
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Icônes */
+.iad-svg {
+  width: 23px;
+  height: 23px;
+  display: inline-block;
+  flex: 0 0 auto;
+}
+
+.iad-svg svg {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 /* Bandeau bas */
@@ -108,7 +145,7 @@ body.iad-themed {
   color: #fff;
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 26px;
   padding: 12px 34px;
   box-shadow: 0 -4px 18px rgba(0,0,0,.22);
   box-sizing: border-box;
@@ -122,6 +159,7 @@ body.iad-themed {
   display: flex;
   align-items: center;
   gap: 14px;
+  min-width: max-content;
 }
 
 .iad-bottom-icon {
@@ -132,27 +170,39 @@ body.iad-themed {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 25px;
   flex: 0 0 auto;
+}
+
+.iad-bottom-icon .iad-svg {
+  width: 24px;
+  height: 24px;
 }
 
 .iad-bottom-link strong {
   display: block;
-  font-size: 17px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 700;
 }
 
-.iad-bottom-link span {
+.iad-bottom-link span span {
   display: block;
   margin-top: 4px;
   font-size: 13px;
   opacity: .9;
+  font-weight: 400;
+}
+
+.iad-bottom-site strong {
+  max-width: 430px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .iad-bottom-separator {
   height: 48px;
   width: 1px;
   background: rgba(255,255,255,.35);
+  flex: 0 0 auto;
 }
 
 .iad-bottom-spacer {
@@ -160,10 +210,22 @@ body.iad-themed {
 }
 
 .iad-bottom-logo {
-  font-size: 52px;
+  color: #fff;
   font-weight: 900;
+  line-height: .78;
   letter-spacing: -4px;
-  line-height: .8;
+  text-align: center;
+  min-width: 72px;
+}
+
+.iad-bottom-logo-main {
+  font-size: 46px;
+}
+
+.iad-bottom-logo-small {
+  font-size: 22px;
+  letter-spacing: -2px;
+  margin-top: 2px;
 }
 
 .iad-bottom-project {
@@ -223,7 +285,7 @@ body.iad-themed .viewControlButton-5 { bottom: calc(var(--iad-bottom-height) + 5
 body.iad-themed .viewControlButton-6 { bottom: calc(var(--iad-bottom-height) + 10px) !important; }
 
 /* Mobile */
-@media (max-width: 1050px), (max-height: 560px) {
+@media (max-width: 1120px), (max-height: 560px) {
   :root {
     --iad-top-height: 76px;
     --iad-bottom-height: 66px;
@@ -235,9 +297,16 @@ body.iad-themed .viewControlButton-6 { bottom: calc(var(--iad-bottom-height) + 1
     padding: 8px 12px;
   }
 
-  .iad-logo {
+  .iad-logo-mark {
+    min-width: 58px;
+  }
+
+  .iad-logo-main {
     font-size: 34px;
-    line-height: 28px;
+  }
+
+  .iad-logo-small {
+    font-size: 17px;
   }
 
   .iad-brand {
