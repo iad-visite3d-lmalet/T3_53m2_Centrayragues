@@ -1,4 +1,4 @@
-/* iad-theme/iad.js — V9 logos PNG officiels */
+/* iad-theme/iad.js — V10 logos PNG officiels ajustés */
 
 (function () {
   "use strict";

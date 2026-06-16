@@ -1,13 +1,13 @@
-/* iad-theme/iad.css — V9
-   Logos PNG officiels fournis par Laurent.
+/* iad-theme/iad.css — V10
+   Thème IAD Marzipano avec logos officiels PNG ajustés.
 */
 
 :root {
   --iad-blue: #006b98;
   --iad-blue-light: #009fe3;
   --iad-dark: #062b3f;
-  --iad-top-height: 108px;
-  --iad-bottom-height: 86px;
+  --iad-top-height: 104px;
+  --iad-bottom-height: 82px;
 }
 
 body.iad-themed {
@@ -27,7 +27,7 @@ body.iad-themed {
   display: flex;
   align-items: center;
   gap: 26px;
-  padding: 14px 26px;
+  padding: 12px 26px;
   border-bottom: 1px solid rgba(0,0,0,.12);
   box-shadow: 0 4px 18px rgba(0,0,0,.16);
   box-sizing: border-box;
@@ -36,12 +36,11 @@ body.iad-themed {
 .iad-brand {
   display: flex;
   align-items: center;
-  gap: 22px;
-  min-width: 330px;
+  min-width: 300px;
 }
 
 .iad-logo-img {
-  width: 178px;
+  width: 92px;
   height: auto;
   display: block;
   flex: 0 0 auto;
@@ -71,7 +70,7 @@ body.iad-themed {
 
 .iad-phone-top {
   color: var(--iad-blue) !important;
-  font-size: 22px;
+  font-size: 21px;
   font-weight: 500;
   white-space: nowrap;
   text-decoration: none;
@@ -83,9 +82,9 @@ body.iad-themed {
 .iad-button {
   background: var(--iad-blue);
   color: #fff !important;
-  padding: 14px 24px;
+  padding: 13px 22px;
   border-radius: 14px;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 600;
   white-space: nowrap;
   text-decoration: none;
@@ -120,8 +119,8 @@ body.iad-themed {
   color: #fff;
   display: flex;
   align-items: center;
-  gap: 26px;
-  padding: 12px 34px;
+  gap: 24px;
+  padding: 10px 30px;
   box-shadow: 0 -4px 18px rgba(0,0,0,.22);
   box-sizing: border-box;
 }
@@ -133,13 +132,13 @@ body.iad-themed {
   text-decoration: none;
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 13px;
   min-width: max-content;
 }
 
 .iad-bottom-icon {
-  width: 42px;
-  height: 42px;
+  width: 40px;
+  height: 40px;
   border: 2px solid rgba(255,255,255,.9);
   border-radius: 12px;
   display: inline-flex;
@@ -149,32 +148,32 @@ body.iad-themed {
 }
 
 .iad-bottom-icon .iad-svg {
-  width: 24px;
-  height: 24px;
+  width: 23px;
+  height: 23px;
 }
 
 .iad-bottom-link strong {
   display: block;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
 }
 
 .iad-bottom-link span span {
   display: block;
   margin-top: 4px;
-  font-size: 13px;
+  font-size: 12px;
   opacity: .9;
   font-weight: 400;
 }
 
 .iad-bottom-site strong {
-  max-width: 430px;
+  max-width: 420px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .iad-bottom-separator {
-  height: 48px;
+  height: 44px;
   width: 1px;
   background: rgba(255,255,255,.35);
   flex: 0 0 auto;
@@ -185,7 +184,7 @@ body.iad-themed {
 }
 
 .iad-bottom-logo-img {
-  width: 112px;
+  width: 70px;
   height: auto;
   display: block;
   flex: 0 0 auto;
@@ -199,12 +198,12 @@ body.iad-themed {
 .iad-bottom-project strong {
   display: block;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .iad-bottom-project span {
   display: block;
-  font-size: 18px;
+  font-size: 17px;
   margin-top: 4px;
 }
 
@@ -212,7 +211,7 @@ body.iad-themed {
   color: #fff !important;
   border: 1px solid rgba(255,255,255,.85);
   border-radius: 12px;
-  padding: 10px 22px;
+  padding: 9px 20px;
   font-size: 15px;
   font-weight: 600;
   white-space: nowrap;
@@ -261,7 +260,7 @@ body.iad-themed .viewControlButton-6 { bottom: calc(var(--iad-bottom-height) + 1
   }
 
   .iad-logo-img {
-    width: 92px;
+    width: 70px;
   }
 
   .iad-brand {
